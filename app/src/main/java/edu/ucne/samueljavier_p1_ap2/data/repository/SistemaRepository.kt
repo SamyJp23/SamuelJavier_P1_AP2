@@ -6,3 +6,5 @@ import javax.inject.Inject
 class EntidadRepository @Inject constructor(
     private val dao: Dao,
 )
+
+
