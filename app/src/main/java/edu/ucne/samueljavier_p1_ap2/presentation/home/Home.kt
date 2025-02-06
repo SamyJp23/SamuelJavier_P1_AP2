@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Card
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material.icons.filled.Call
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -64,7 +65,7 @@ fun Home(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Icon(
-                    imageVector = Icons.Filled.Person,
+                    imageVector = Icons.Filled.Star,
                     contentDescription = "Sistemas",
                     tint = Color.White,
                     modifier = Modifier.padding(end = 16.dp)
