@@ -37,10 +37,6 @@ class SistemaViewModel @Inject constructor(
         }
     }
 
-
-    fun new(){
-        _uiState.value = SistemaUiState()
-    }
     fun delete(){
         viewModelScope.launch {
             sistemaRepository.delete(_uiState.value.toEntity())

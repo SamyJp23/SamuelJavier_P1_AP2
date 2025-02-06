@@ -81,7 +81,7 @@ fun SistemaListBodyScreen(
             modifier = Modifier
                 .align(Alignment.BottomEnd)
                 .padding(16.dp),
-            containerColor = Color.Black,
+            containerColor = Color.Gray,
             contentColor = Color.White
 
         ) {
@@ -99,19 +99,21 @@ private fun SistemaHeaderRow() {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
-            .background(Color.Black)
-            .padding(vertical = 30.dp)
+            .padding(20.dp)
+            .background(Color.Gray)
+            .padding(vertical = 30.dp),
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
-            modifier = Modifier.weight(1f),
+            modifier = Modifier.weight(1f)
+                .padding(end = 8.dp),
             text = "ID",
             style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Bold),
             color = Color.White
         )
         Text(
             modifier = Modifier.weight(2f),
-            text = "Descripcion",
+            text = "Nombre",
             style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Bold),
             color = Color.White
 
@@ -136,7 +138,7 @@ private fun EntidadRow(
 
             },
         colors = CardDefaults.cardColors(
-            containerColor = Color.Black
+            containerColor = Color.Gray
         ),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
         shape = MaterialTheme.shapes.medium

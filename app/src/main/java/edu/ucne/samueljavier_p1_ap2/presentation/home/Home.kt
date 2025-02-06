@@ -54,7 +54,7 @@ fun Home(
                 .padding(vertical = 8.dp)
                 .clickable(onClick = goToSistema),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Black
+                containerColor = Color.Gray
             ),
             elevation = CardDefaults.cardElevation(8.dp)
         ) {
